@@ -1,0 +1,30 @@
+.calmio-button-sos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 12px;
+  background-color: #E9B0AB; /* fundo */
+  color: #4A1C1C; /* texto */
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: 0.2s ease-in-out;
+}
+
+.calmio-button-sos:hover {
+  background-color: #E59B97;
+}
+
+.sos-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FF8181;
+  border-radius: 50%;
+  padding: 4px;
+}

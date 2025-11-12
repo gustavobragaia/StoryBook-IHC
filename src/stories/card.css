@@ -1,0 +1,51 @@
+.calmio-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFFFF3; /* fundo do card */
+  border-radius: 12px;
+  padding: 14px 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, transform 0.1s ease;
+}
+
+.calmio-card:hover {
+  background-color: #fdfae6;
+  transform: scale(1.01);
+}
+
+.card-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.card-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background-color: #F6EDD3; /* fundo do ícone */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-text h3 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  color: #333333;
+  margin: 0;
+  font-weight: 700;
+}
+
+.card-text p {
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+  color: #666666;
+  margin: 2px 0 0 0;
+}
+
+.card-arrow {
+  color: #8a8a8a;
+}

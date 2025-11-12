@@ -1,0 +1,26 @@
+.calmio-button-concluir {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 12px;
+  background-color: #94B376; /* fundo */
+  color: #FFFFFF; /* texto */
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease-in-out, transform 0.1s ease;
+}
+
+.calmio-button-concluir:hover {
+  background-color: #88A46B; /* variação suave */
+  transform: scale(1.02);
+}
+
+.calmio-button-concluir:active {
+  background-color: #7D985F; /* clique */
+  transform: scale(0.98);
+}

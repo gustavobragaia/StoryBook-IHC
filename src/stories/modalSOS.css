@@ -1,0 +1,106 @@
+.sos-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.sos-modal {
+  position: relative;
+  background-color: #F6EDD3;
+  border-radius: 20px;
+  padding: 28px 20px 20px 20px;
+  width: 340px;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.sos-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+}
+
+.sos-modal h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+.sos-modal p {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 18px;
+}
+
+.sos-options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.sos-action {
+  background-color: #F9D65C;
+  border: none;
+  border-radius: 14px;
+  padding: 12px 16px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+  color: #333;
+  font-weight: 500;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease-in-out, transform 0.1s ease;
+}
+
+.sos-action:hover {
+  background-color: #F5CA41;
+  transform: scale(1.02);
+}
+
+.sos-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: #EACB51;
+  flex-shrink: 0;
+}
+
+.sos-cancel {
+  background-color: #EAEAEA;
+  color: #333;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 0;
+  width: 100%;
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.sos-cancel:hover {
+  background-color: #dcdcdc;
+}
