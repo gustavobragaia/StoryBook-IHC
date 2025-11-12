@@ -1,74 +1,35 @@
-# React + TypeScript + Vite
+# Calmio — HCI Component Standardization
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository is a small React + TypeScript project used for a Human–Computer Interaction class to standardize UI elements and patterns. Components are developed and showcased with Storybook.
 
-Currently, two official plugins are available:
+Quick start
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Install: npm install
+- Run app: npm run dev
+- Run Storybook: npm run storybook
+- Build: npm run build
 
-## React Compiler
+Key files and scripts
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Project scripts: [package.json](package.json)
+- Vite config: [vite.config.ts](vite.config.ts)
+- Storybook config: [.storybook/main.ts](.storybook/main.ts)
+- App entry: [src/main.tsx](src/main.tsx)
 
-## Expanding the ESLint configuration
+Main components (stories)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- [`Header`](src/stories/Header.tsx)
+- [`MenuLateral`](src/stories/MenuLateral.tsx)
+- [`ButtonSOS`](src/stories/ButtonSOS.tsx)
+- [`SOSButtonWithModal`](src/stories/SOSButtonWithModal.tsx)
+- [`ModalSOS`](src/stories/ModalSOS.tsx)
+- [`ModalHumor`](src/stories/ModalHumor.tsx)
+- [`Card`](src/stories/Card.tsx)
+- [`CardExercicio`](src/stories/CardExercicio.tsx)
+- [`ButtonChat`](src/stories/ButtonChat.tsx)
+- [`ButtonConcluir`](src/stories/ButtonConcluir.tsx)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Notes
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-# StoryBook-IHC
+- Stories and styles live under [src/stories](src/stories).
+- Keep components small and consistent; use Storybook stories as the source of truth for UI patterns.
