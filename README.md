@@ -29,7 +29,29 @@ Main components (stories)
 - [`ButtonChat`](src/stories/ButtonChat.tsx)
 - [`ButtonConcluir`](src/stories/ButtonConcluir.tsx)
 
+Included component stories and docs
+
+- ButtonChat
+- ButtonConcluir
+- ButtonSOS
+- Card
+- CardExercicio
+- ChatBubble
+- ChatInput
+- Colors
+- Header
+- ModalHumor
+- ModalSOS
+- SOSButtonWithModal
+- Typography
+- Configure (MDX docs)
+
+Notes on components without stories
+
+- MenuLateral component exists at src/stories/MenuLateral.tsx but no story file currently — consider adding MenuLateral.stories.tsx if you want it shown in Storybook.
+
 Notes
 
 - Stories and styles live under [src/stories](src/stories).
+- See our figma: figma.com/design/phjoLqgBl4wH6RGWeB5xqY/IHC?node-id=0-1&p=f&t=v41gYhO5ZIJOzOs8-0
 - Keep components small and consistent; use Storybook stories as the source of truth for UI patterns.
