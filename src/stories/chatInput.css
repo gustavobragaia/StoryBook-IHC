@@ -1,0 +1,31 @@
+.chat-input-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px 16px;
+  background-color: transparent;
+}
+
+.chat-input {
+  width: 100%;
+  max-width: 320px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 24px;
+  background-color: #EAE6F5; /* tom suave lilás acinzentado */
+  font-family: 'Nunito', sans-serif;
+  font-size: 15px;
+  color: #49454F;
+  outline: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.2s ease;
+}
+
+.chat-input::placeholder {
+  color: #49454F;
+  opacity: 0.7;
+}
+
+.chat-input:focus {
+  box-shadow: 0 0 0 2px rgba(232, 193, 90, 0.3);
+}
